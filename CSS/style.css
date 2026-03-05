@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+	background-image: url("../images/header-pozadina.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.header h1 {
+	color: rgb(230, 235, 255);
+	text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+	font-size: 5em;
+}
+
+.header a {
+	background-color: rgb(230, 235, 255);
+	padding: 15px 15px;
+	border-radius: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.header a:hover {
+	background-color: rgb(210, 215, 255);
+}
+
+#cars-container {
+	scroll-margin-top: 20px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 10px;
+	gap: 20px;
+}
+
+.car-card {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 10px;
+	border-radius: 15px;
+	background: linear-gradient(
+		to bottom right,
+		rgb(255, 173, 173),
+		rgb(170, 170, 251)
+	);
+	transition:
+		transform 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+.car-card img {
+	border-radius: 15px;
+	width: 100%;
+}
+
+.car-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.car-info {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 1rem;
+}
+
+.car-title {
+	font-size: 1.65rem;
+}
+
+.car-info .engine-info {
+	text-transform: uppercase;
+}
+
+.miles-reg {
+	display: flex;
+	gap: 10px;
+	font-size: 1rem;
+}
+
+.miles-reg p {
+	padding: 2px 5px;
+	border-radius: 4px;
+	background: linear-gradient(
+		to bottom right,
+		rgb(255, 212, 212),
+		rgb(206, 206, 255)
+	);
+}
+
+.price-pcm {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+	color: rgb(131, 0, 0);
+}
+
+.pcm {
+	color: black;
+	font-size: 1.1rem;
+}
