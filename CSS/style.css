@@ -12,18 +12,32 @@ body {
 	font-family: "Ubuntu", sans-serif;
 }
 
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.radius-15 {
+	border-radius: 15px;
+}
+
 .header {
 	background-image: url("../images/header-pozadina.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	height: 100vh;
+	min-height: 100vh;
 	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	gap: 22px;
 	justify-content: center;
 	align-items: center;
+	gap: 22px;
 }
 
 .header h1 {
@@ -34,8 +48,7 @@ body {
 
 .header a {
 	background-color: rgb(230, 235, 255);
-	padding: 15px 15px;
-	border-radius: 15px;
+	padding: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -50,7 +63,6 @@ body {
 }
 
 .container {
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 20px 10px;
@@ -59,11 +71,8 @@ body {
 
 .car-card {
 	width: 300px;
-	display: flex;
-	flex-direction: column;
 	gap: 15px;
 	padding: 10px;
-	border-radius: 15px;
 	background: linear-gradient(
 		to bottom right,
 		rgb(255, 173, 173),
@@ -75,7 +84,6 @@ body {
 }
 
 .car-card img {
-	border-radius: 15px;
 	width: 100%;
 }
 
@@ -86,8 +94,6 @@ body {
 
 .car-info {
 	padding: 10px;
-	display: flex;
-	flex-direction: column;
 	gap: 10px;
 	font-size: 1rem;
 }
@@ -101,7 +107,6 @@ body {
 }
 
 .miles-reg {
-	display: flex;
 	gap: 10px;
 	font-size: 1rem;
 }
@@ -117,8 +122,6 @@ body {
 }
 
 .price-pcm {
-	display: flex;
-	justify-content: space-between;
 	font-size: 1.2rem;
 	color: rgb(131, 0, 0);
 }
