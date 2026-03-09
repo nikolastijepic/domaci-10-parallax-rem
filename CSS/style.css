@@ -37,18 +37,24 @@ body {
 	background-size: cover;
 	justify-content: center;
 	align-items: center;
-	gap: 22px;
+	gap: 40px;
 }
 
 .header h1 {
 	color: rgb(230, 235, 255);
 	text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 	font-size: 5em;
+	text-align: center;
 }
 
 .header a {
-	background-color: rgb(230, 235, 255);
-	padding: 15px;
+	color: purple;
+	background: linear-gradient(
+		to bottom right,
+		rgb(255, 173, 173),
+		rgb(170, 170, 251)
+	);
+	padding: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -63,9 +69,9 @@ body {
 }
 
 .container {
-	flex-wrap: wrap;
 	justify-content: center;
-	margin: 20px 10px;
+	flex-wrap: wrap;
+	margin: 25px 10px;
 	gap: 20px;
 }
 
@@ -129,4 +135,35 @@ body {
 .pcm {
 	color: black;
 	font-size: 1.1rem;
+}
+
+/* ---------- MOBILE (max-width: 640px) ---------- */
+
+@media only screen and (max-width: 640px) {
+	.header h1 {
+		font-size: 3rem;
+	}
+	.car-card {
+		width: 49%;
+		gap: 5px;
+		transition: none;
+	}
+	.car-card:hover {
+		transform: none;
+		box-shadow: none;
+	}
+	.car-title {
+		font-size: 1.2rem;
+	}
+	.price-pcm {
+		gap: 5px;
+	}
+	.car-info {
+		padding: 0;
+		gap: 7px;
+	}
+	.container {
+		margin: 20px 7px;
+		gap: 7px;
+	}
 }
